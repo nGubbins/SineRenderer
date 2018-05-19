@@ -101,4 +101,12 @@ public class Graph : MonoBehaviour {
                 frequency = freqMax;
         }
     }
+
+    //Returns Y on the graph given X
+    public float FindHeight(float x)
+    {
+        float newHeight = 0.0f;
+        newHeight = height * Mathf.Sin(x);
+        return newHeight;
+    }
 }
